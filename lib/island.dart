@@ -25,7 +25,7 @@ class _IslandPageState extends State<IslandPage> {
 
   int rowC = 2;
   int colC = 2;
-  String islanNum = '0';
+  String islandNum = '0';
 
   @override
   Widget build(BuildContext context) {
@@ -125,7 +125,7 @@ class _IslandPageState extends State<IslandPage> {
         ),
       ),
       Text(
-        'No of Islands:' + islanNum,
+        'No of Islands:' + islandNum,
         style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
       )
     ]);
@@ -227,7 +227,7 @@ class _IslandPageState extends State<IslandPage> {
     Util util = new Util();
     print("====");
     print(_grid);
-    islanNum = util.findIslands(_grid).toString();
+    islandNum = util.findIslands(_grid).toString();
     logger.d("======:" + util.findIslands(_grid).toString());
   }
 
